@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+	<style>
+		header {
+			text-align: center;
+			font-family: Helvetica, Arial, sans-serif;
+		}
+	</style>
+<body>
+	<header>
+		<h1>Earthquakes in the Last 24-Hours</h1>
+    <hr>
+	</header>
+</body>
+</html>
+<style>
+ 
+</style>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Leaflet Step-1</title>
+
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+    integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+    crossorigin="" />
+
+  <!-- Our CSS -->
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+<style>
+    #legend {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 1000;
+    margin-bottom: 1200px;
+    margin-right: 10px;
+    background: white;
+    border-radius: 5px;
+    padding: 10px 16px;
+    box-shadow: 0 0 0 2px rgb(0 0 0 / 12%);
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  #legend-desc {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    padding: 10px 16px;
+  }
+  
+  .legend-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0px;
+  }
+
+  .legend-color {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    border-radius: 0px;
+  }
+
+  .legend-label {
+    margin: 0;
+    font-size: 20px;
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+</style>
+</head>
+
+
+  <!-- The div that holds our map -->
+  <div id="map">
+    <div id="legend">
+      <hr>
+      <h1>Legend</h1>
+      <hr>
+      <div class="legend-desc">
+        <p class="legend-label">Depth of Earthquake</p>
+        <hr>
+      </div>
+      <div class="legend-item">
+        <div class="legend-color" style="background-color: #420C09;"></div>
+        <p class="legend-label">10 meters</p>
+      </div>
+      <div class="legend-item">
+        <div class="legend-color" style="background-color: #900D09;"></div>
+        <p class="legend-label">30 meters</p>
+      </div>
+      <div class="legend-item">
+        <div class="legend-color" style="background-color: #990F02;"></div>
+        <p class="legend-label">50 meters</p>
+    </div>
+    <div class="legend-item">
+      <div class="legend-color" style="background-color: #BC544B;"></div>
+      <p class="legend-label">70 meters</p>
+    </div>
+    <div class="legend-item">
+      <div class="legend-color" style="background-color: #E3242B;"></div>
+      <p class="legend-label">90 meters</p>
+    </div>
+    <div class="legend-item">
+      <div class="legend-color" style="background-color: #D0312D;"></div>
+      <p class="legend-label">90+ meters</p>
+    </div>
+    <hr>
+
+<style>
+
+  </style>
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+    integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+    crossorigin=""></script>
+
+  <!-- D3 JavaScript -->
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  
+  <!-- API key -->
+  <!-- <script type="text/javascript" src="config.js"></script>-->
+
+  <!-- Our JavaScript -->
+  <script type="text/javascript" src="logic.js"></script>
+</body>
+
+</html>
